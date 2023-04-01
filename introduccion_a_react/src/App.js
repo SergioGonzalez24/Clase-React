@@ -13,25 +13,29 @@ const infoProgramas = [
 
   {titulo: 'Bluey',
   alttDesc: 'Bluey',
-  texto:'¿Como te sientes hoy Blue? Preparate para acompañar a este iconico perrito a resolver divertidos misterios.', 
+  texto:'Acompaña la aventura de Bluey y su familia en esta serie animada de Disney Junior', 
   imagen: 'https://www.newidea.com.au/media/62308/mainres.jpg'},
 
   {titulo: 'Peppa Pig',
   alttDesc: 'Peppa Pig', 
-  texto: '¿Como te sientes hoy Blue? Preparate para acompañar a este iconico perrito a resolver divertidos misterios.', 
+  texto: 'Pepa es una cerdita que vive con su familia y sus amigos en un pueblo llamado Piggyville, ¡ven a conocerla!', 
   imagen: 'https://www.gratistodo.com/wp-content/uploads/2016/08/peppa-pig-serie-tv-descargar-imagenes-gratis.jpg'},
 
   {titulo: 'Paw Patrol', 
   alttDesc: 'Paw Patrol',
-  texto: '¿Como te sientes hoy Blue? Preparate para acompañar a este iconico perrito a resolver divertidos misterios.', 
+  texto: '¡Acompaña a Chase, Marshall, Rocky, Rubble, Zuma, Skye y Everest en sus aventuras!', 
   imagen: 'https://www.gamerroof.com/wp-content/uploads/2019/05/Paw-Patrol-Full-Version-Free-Download.jpeg'}
-]
+];
 
 function App() {
   return (
     <React.Fragment>
       <Lista>
-        {infoProgramas.map(infoPrograma => (<TvShow titulo = {infoPrograma.titulo} texto = {infoPrograma.texto} imagen = {infoPrograma.imagen} />))}
+        {infoProgramas.map(infoPrograma => 
+          (<TvShow titulo = {infoPrograma.titulo} 
+          texto = {infoPrograma.texto} 
+          imagen = {infoPrograma.imagen} />
+          ))}
       </Lista>
     </React.Fragment>
   );

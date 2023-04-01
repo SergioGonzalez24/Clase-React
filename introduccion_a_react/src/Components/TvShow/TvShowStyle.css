@@ -1,0 +1,28 @@
+img {
+    width: 95%;
+    height: auto;
+    border-radius: 5px;
+    margin: auto;
+    padding-top: 15px;
+    display: block;
+}
+
+.TvShowStyle{
+
+    width: 50%;
+    height: 60%;
+    background-color: #1d1d1d;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
+
+

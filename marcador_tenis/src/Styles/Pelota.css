@@ -1,0 +1,23 @@
+
+
+  .imgPelota {
+    height: 30px;
+    width: 30px;
+  }
+  
+  .imgPelotaOn {
+    background-color: white;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    box-shadow: 0px 0px 10px 5px rgba(255,255,255,0.4);
+  }
+  
+  .imgPelotaOff {
+    background-color: #222;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    box-shadow: 0px 0px 10px 5px rgba(34,34,34,0.4);
+  }
+  

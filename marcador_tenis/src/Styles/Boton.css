@@ -1,7 +1,16 @@
 .Boton-tenis {
-    width: 250px;
-    height: 40px;
-    font-size: 1.3rem;
-    margin: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d7eef4;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 20px;
     cursor: pointer;
-}
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .Boton-tenis:hover {
+    background-color: #f46b45;
+    color: #fefefe;
+    box-shadow: 0 0 10px #f46b45;
+  }

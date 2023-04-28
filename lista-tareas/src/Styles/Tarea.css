@@ -1,0 +1,46 @@
+
+   .tarea-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .tarea-contenedor:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .completada .tarea-texto {
+    text-decoration: line-through;
+    color: #8f8f8f;
+  }
+  
+  .tarea-contenedor.completada {
+    background-color: #d3d3d3;
+  }
+  
+  .tarea-texto {
+    font-size: 1.2rem;
+    cursor: pointer;
+    flex: 1;
+  }
+  
+  .tarea-contenedor-icono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #4CAF50;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .tarea-contenedor-icono:hover {
+    color: #3e8e41;
+    transform: scale(1.2);
+  }
+  

@@ -1,0 +1,117 @@
+/* Estilos para el contenedor principal de la aplicación */
+.App {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la cabecera de la aplicación */
+.App-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #364f6b;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el título de la aplicación */
+.App-title {
+  font-size: 32px;
+  margin: 0;
+}
+
+/* Estilos para el botón de agregar tarea */
+.captura-boton {
+  background-color: #43aa8b;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.captura-boton:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos para la lista de tareas */
+.lista-tareas-contenedor {
+  margin-top: 20px;
+}
+
+/* Estilos para cada tarea */
+.tarea-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tarea-contenedor:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tarea-contenedor.completada {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.tarea-texto {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.tarea-contenedor-icono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e76f51;
+  color: #fff;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tarea-contenedor-icono:hover {
+  background-color: #ff6b6b;
+  transform: rotate(360deg);
+}
+
+/* Estilos para el formulario de captura de tareas */
+.tarea-forma {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.tarea-input {
+  flex: 1;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.tarea-boton {
+  background-color: #43aa
+}

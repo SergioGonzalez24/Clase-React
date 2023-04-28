@@ -1,0 +1,30 @@
+.captura-boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: #4CAF50;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.captura-boton:hover {
+  color: #3e8e41;
+  transform: scale(1.2);
+}
+
+.lista-tareas-contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.lista-tareas-contenedor h1 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #4CAF50;
+}

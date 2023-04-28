@@ -1,0 +1,56 @@
+.tarea-forma {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.tarea-input {
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  width: 50%;
+}
+
+.tarea-boton-agregar {
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-right: 0.5rem;
+  background-color: #2a622c;;
+  color: rgb(255, 255, 255);
+}
+
+
+.tarea-boton-agregar:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.tarea-boton-cancelar {
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-right: 0.5rem;
+  background-color: #803434;
+  color: rgb(255, 253, 253);
+}
+
+
+
+.tarea-boton-cancelar:hover {
+  background-color: #ff0000;
+  color: white;
+}
+
+.tarea-boton:last-child {
+  margin-right: 0;
+}

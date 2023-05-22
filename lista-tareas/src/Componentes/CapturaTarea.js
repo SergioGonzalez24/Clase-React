@@ -16,6 +16,8 @@ const CapturaTarea = (props) => {
     props.onSubmit(tareaNueva);
     // Reseteamos el valor del input después de enviar el formulario
     descripcionTarea.current.value = "";
+
+    console.log(tareaNueva);
   };
 
   return (

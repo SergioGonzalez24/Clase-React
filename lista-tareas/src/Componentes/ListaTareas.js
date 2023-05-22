@@ -14,7 +14,7 @@ const ListaTareas = (props) => {
 
   // Función para agregar una tarea
   const agregarTarea = (tarea) => {
-    if (tarea.texto.length > 0) {
+    if (tarea.texto.trim() !== "") {
       const nuevasTareas = [tarea, ...tareas];
       setTareas(nuevasTareas);
     }

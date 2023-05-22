@@ -19,6 +19,8 @@ const puntajes = {
 };
 
 function App() {
+
+
   const [puntosA, setPuntosA] = useState(0);
   const [puntosB, setPuntosB] = useState(0);
 
@@ -104,7 +106,7 @@ function App() {
         "\nEl ganador es: " +
         (juegosGanadosA > juegosGanadosB ? "Jugador A" : "Jugador B");
 
-      alert(alertMsg);
+      // alert(alertMsg);
       const alertBox = document.createElement("div");
       alertBox.classList.add("game-end-alert");
       alertBox.textContent = alertMsg;

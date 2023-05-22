@@ -1,0 +1,51 @@
+/* paises.css */
+
+.loading-bar {
+    width: 200px;
+    height: 20px;
+    background-color: #f3f3f3;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .loading-bar-progress {
+    width: 0;
+    height: 100%;
+    background-color: #4caf50;
+    animation: loading-animation 2s ease-in-out infinite;
+  }
+  
+  @keyframes loading-animation {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 50%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  .contenedor-bandera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .contenedor-bandera h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .contenedor-bandera img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  

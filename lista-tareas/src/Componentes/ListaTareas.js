@@ -1,9 +1,10 @@
 
-import { Fragment, useState } from "react";
+import { Fragment, useState, useEffect} from "react";
 import CapturaTarea from "./CapturaTarea";
 import Tarea from "./Tarea";
 import "../Styles/ListaTareas.css";
 import { RiAddCircleFill } from "react-icons/ri";
+import { v4 as uuidv4 } from "uuid";
 
 const ListaTareas = (props) => {
   // Estado para indicar si se está capturando una nueva tarea
@@ -11,6 +12,25 @@ const ListaTareas = (props) => {
 
   // Estado para almacenar las tareas
   const [tareas, setTareas] = useState([]);
+
+   // Obtener las tareas desde el servidor JSONPlaceholder
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/todos")
+      .then((response) => response.json())
+      .then((data) => {
+        const tareas = data.map((tarea) => {
+          const nuevaTarea = {
+            id: uuidv4(),
+            texto: tarea.title,
+            completada: tarea.completed,   
+          };
+          return nuevaTarea;
+        });
+        setTareas(tareas);
+      })
+      .catch((error) => console.log(error));
+  }, []);
+
 
   // Función para agregar una tarea
   const agregarTarea = (tarea) => {
@@ -47,6 +67,8 @@ const ListaTareas = (props) => {
   const ocultarFormularioCaptura = () => {
     setEstaCapturando(false);
   };
+
+
 
   return (
     <Fragment>

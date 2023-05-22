@@ -16,7 +16,7 @@
 }
 
 .lista-tareas-contenedor {
-  display: flex;
+  display: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;

@@ -25,7 +25,8 @@ export function Home() {
 
       <div className="form-container">
         <div className="card-container">
-          <h2>Consulta las banderas del mundo</h2>
+          <h2>Busqueda de banderas por pais</h2>
+          <h6>Introducir nombre de pais en ingles</h6>
           <form onSubmit={fetch}>
             <input ref={countryName} type="text"></input>
             <button type="submit">Buscar</button>

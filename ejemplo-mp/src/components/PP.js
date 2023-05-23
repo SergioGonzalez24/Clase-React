@@ -62,8 +62,13 @@ const Paises = () => {
 
   return (
     <div className="contenedor-bandera">
-      <h1>Bandera:</h1>
-      <img src={country} alt="bandera" />
+      <div>
+        <h1>Bandera:</h1>
+        <img src={country} alt="bandera" />
+      </div>
+      <div>
+        <button class="buttonBack" onClick={() => window.history.back()}>Volver</button>
+      </div>
     </div>
   );
 };
